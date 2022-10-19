@@ -1,0 +1,69 @@
+[
+  {
+    "organization": {
+      "organizationId": "178d343e2e824f95b4db0ca458743ad3"
+    },
+    "report": {
+      "reportId": "0219182fdc314a6aab4242d04ff6bbd3",
+      "reportType": "COUNT",
+      "reportIcon": "PermIdentity",
+      "reportMetricsValue": "MEMBER_COUNTS",
+      "reportTitle": "會員數量",
+      "reportCreateDateString": "2021-11-09T10:57:27.000Z"
+    },
+    "organizationReportNo": 1
+  },
+  {
+    "organization": {
+      "organizationId": "178d343e2e824f95b4db0ca458743ad3"
+    },
+    "report": {
+      "reportId": "0219182fdc314a6aab4242d04ff6bbd4",
+      "reportType": "COUNT",
+      "reportIcon": "Info",
+      "reportMetricsValue": "ISSUE_OPEN_COUNTS",
+      "reportTitle": "議題開啟狀態數量",
+      "reportCreateDateString": "2021-11-09T10:57:27.000Z"
+    },
+    "organizationReportNo": 2
+  },
+  {
+    "organization": {
+      "organizationId": "178d343e2e824f95b4db0ca458743ad3"
+    },
+    "report": {
+      "reportId": "0219182fdc314a6aab4242d04ff6bbd0",
+      "reportTitle": "圓餅圖標題",
+      "reportType": "SIMPLE_PIE"
+    },
+    "organizationReportNo": 3
+  },
+  {
+    "organization": {
+      "organizationId": "178d343e2e824f95b4db0ca458743ad3"
+    },
+    "report": {
+      "reportId": "0219182fdc314a6aab4242d04ff6bbd0",
+      "reportType": "SIMPLE_LINE",
+      "reportIcon": "BarChart",
+      "reportMetricsValue": "FILE_DOWNLOAD_TIMES",
+      "reportTitle": "檔案下載排行榜",
+      "reportCreateDateString": "2021-11-09T11:09:32.000Z"
+    },
+    "organizationReportNo": 4
+  },
+  {
+    "organization": {
+      "organizationId": "178d343e2e824f95b4db0ca458743ad3"
+    },
+    "report": {
+      "reportId": "0219182fdc314a6aab4242d04ff6bbd0",
+      "reportType": "SIMPLE_BAR",
+      "reportIcon": "BarChart",
+      "reportMetricsValue": "FILE_DOWNLOAD_TIMES",
+      "reportTitle": "留言排行榜",
+      "reportCreateDateString": "2021-11-09T11:09:32.000Z"
+    },
+    "organizationReportNo": 5
+  }
+]

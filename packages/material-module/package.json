@@ -1,0 +1,113 @@
+{
+  "name": "@eGroupAI/material-module",
+  "version": "8.36.6",
+  "private": false,
+  "author": "eGroup Team",
+  "description": "EGroup Team react component modules.",
+  "keywords": [
+    "eGroup",
+    "react",
+    "react-component",
+    "modules"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:eGroupAI/egroup-material.git",
+    "directory": "packages/material-module"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/eGroupAI/egroup-material/issues"
+  },
+  "homepage": "https://egroup-material.s3.ap-northeast-1.amazonaws.com/storybook-static/index.html",
+  "dependencies": {
+    "@types/uuid": "^8.3.1",
+    "@types/validator": "^13.6.3",
+    "@types/warning": "^3.0.0",
+    "clsx": "^1.1.1",
+    "query-string": "^7.1.1",
+    "uuid": "^8.3.2",
+    "validator": "^13.6.0",
+    "warning": "^4.0.3"
+  },
+  "scripts": {
+    "test": "jest",
+    "clean": "rimraf build",
+    "build": "yarn clean && yarn build:cjs && yarn build:esm",
+    "build:cjs": "babel --config-file ../../babel.cjs.config.js ./src --out-dir ./build --extensions .js,.ts,.jsx,.tsx",
+    "build:esm": "babel --config-file ../../babel.config.js ./src --out-dir ./build/esm --extensions .js,.ts,.jsx,.tsx",
+    "build:copy-files": "node ../../scripts/copy-files.js",
+    "clear:tsd": "node ../../scripts/clear-tsd.js"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "peerDependencies": {
+    "@eGroupAI/hooks": "^8.32.7",
+    "@eGroupAI/material": "^8.32.7",
+    "@eGroupAI/material-lab": "^8.32.7",
+    "@eGroupAI/material-router": "^8.21.11",
+    "@eGroupAI/typings": "^8.32.7",
+    "@eGroupAI/utils": "^8.27.11",
+    "@mui/icons-material": "^5.2.1",
+    "@mui/lab": "^5.0.0-alpha.59",
+    "@mui/material": "^5.2.3",
+    "@mui/styles": "^5.2.3",
+    "@types/react": "^16.8.6 || ^17.0.0",
+    "@types/react-beautiful-dnd": "^13.1.2",
+    "@types/react-dom": "^16.9.8 || ^17.0.0",
+    "@types/react-router-config": "^5.0.1",
+    "@types/react-select": "^4.0.15",
+    "froala-editor": "^4.0.7",
+    "html2canvas": "^1.0.0-rc.7",
+    "next": "12.0.10",
+    "react": "^16.8.0 || ^17.0.0",
+    "react-beautiful-dnd": "^13.1.0",
+    "react-dom": "^16.8.0 || ^17.0.0",
+    "react-froala-wysiwyg": "^4.0.7",
+    "react-router": "^5.2.0",
+    "react-router-config": "^5.1.1",
+    "react-router-dom": "^5.2.0",
+    "react-select": "^4.3.1",
+    "react-spring": "^9.2.4",
+    "recharts": "^2.1.6"
+  },
+  "peerDependenciesMeta": {
+    "@mui/lab": {
+      "optional": true
+    },
+    "@types/react-select": {
+      "optional": true
+    },
+    "next": {
+      "optional": true
+    },
+    "froala-editor": {
+      "optional": true
+    },
+    "html2canvas": {
+      "optional": true
+    },
+    "react-froala-wysiwyg": {
+      "optional": true
+    },
+    "react-router": {
+      "optional": true
+    },
+    "react-router-dom": {
+      "optional": true
+    },
+    "react-select": {
+      "optional": true
+    },
+    "react-spring": {
+      "optional": true
+    },
+    "recharts": {
+      "optional": true
+    }
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}

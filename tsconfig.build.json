@@ -1,0 +1,68 @@
+{
+  "compilerOptions": {
+    "jsx": "react",
+    "baseUrl": "./packages",
+    "paths": {
+      "@eGroupAI/material/*": ["material/src/*"],
+      "@eGroupAI/material-form/*": ["material-form/src/*"],
+      "@eGroupAI/material-formik/*": ["material-formik/src/*"],
+      "@eGroupAI/material-icons/*": ["material-icons/src/*"],
+      "@eGroupAI/material-intl/*": ["material-intl/src/*"],
+      "@eGroupAI/material-lab/*": ["material-lab/src/*"],
+      "@eGroupAI/material-layout/*": ["material-layout/src/*"],
+      "@eGroupAI/material-module/*": ["material-module/src/*"],
+      "@eGroupAI/material-router/*": ["material-router/src/*"],
+      "@eGroupAI/devops/*": ["devops/src/*"],
+      "@eGroupAI/hooks/*": ["hooks/src/*"],
+      "@eGroupAI/testing-utils/*": ["testing-utils/src/*"],
+      "@eGroupAI/utils/*": ["utils/src/*"],
+      "@eGroupAI/redux-modules/*": ["redux-modules/src/*"],
+      "@eGroupAI/typings/*": ["typings/src/*"]
+    },
+    "module": "esnext",
+    "moduleResolution": "node",
+    "target": "es5",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "strict": true,
+    "noImplicitAny": false,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "forceConsistentCasingInFileNames": true,
+    "strictNullChecks": true,
+    "noUnusedLocals": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "declaration": true,
+    "emitDeclarationOnly": true,
+    "skipLibCheck": true
+  },
+  "include": [
+    "packages/material/src/**/*",
+    "packages/material-form/src/**/*",
+    "packages/material-formik/src/**/*",
+    "packages/material-icons/src/**/*",
+    "packages/material-intl/src/**/*",
+    "packages/material-lab/src/**/*",
+    "packages/material-layout/src/**/*",
+    "packages/material-module/src/**/*",
+    "packages/material-router/src/**/*",
+    "packages/devops/src/**/*",
+    "packages/hooks/src/**/*",
+    "packages/testing-utils/src/**/*",
+    "packages/utils/src/**/*",
+    "packages/redux-modules/src/**/*",
+    "packages/typings/src/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "**/*.test.js",
+    "**/*.test.jsx",
+    "**/*.test.ts",
+    "**/*.test.tsx"
+  ]
+}

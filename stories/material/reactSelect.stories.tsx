@@ -1,0 +1,560 @@
+import React, { FC, useState } from "react";
+
+import { Meta } from "@storybook/react";
+
+import { Provider } from "react-redux";
+import ReactSelect, { OptionType } from "@eGroupAI/material-module/ReactSelect";
+import ReactSelectField from "@eGroupAI/material-form/ReactSelectField";
+import Grid from "@mui/material/Grid";
+import Dialog from "@mui/material/Dialog";
+import DialogContent from "@mui/material/DialogContent";
+import Box from "@mui/material/Box";
+import ListItem from "@mui/material/ListItem";
+import ListItemText from "@mui/material/ListItemText";
+import Typography from "@mui/material/Typography";
+import { Field } from "redux-form";
+import { Button } from "@mui/material";
+import { ValueType } from "react-select";
+import { store } from "stories/storyUtils/configureStore";
+import ReduxForm from "stories/storyUtils/ReduxForm";
+import Highlight from "stories/storyUtils/Highlight";
+
+export default {
+  title: "Components/ReactSelect",
+  component: ReactSelect,
+} as Meta;
+
+export const Default: FC = () => {
+  const [singleValue, setSingleValue] =
+    useState<ValueType<OptionType, boolean>>();
+  const [selectedValue, setSelectedValue] = useState<string>();
+
+  const handleChange = (value: ValueType<OptionType, boolean>) => {
+    setSingleValue(value);
+    const valueSelected = (value as OptionType).value;
+    if (!value) {
+      // Handle the undefined / null scenario here
+    } else if (value instanceof Array) {
+      // Handle an array here
+      // You will likely get an array if you have enabled
+      // isMulti prop
+    } else {
+      // Handle a single value here
+      setSelectedValue(valueSelected);
+    }
+  };
+
+  return (
+    <>
+      Selected Value: {selectedValue}
+      <ReactSelect
+        isClearable
+        MuiTextFieldProps={{
+          label: "Single Select",
+          fullWidth: true,
+        }}
+        placeholder="Placeholder"
+        options={[
+          {
+            label: "I am label",
+            value: "value",
+          },
+        ]}
+        value={singleValue}
+        onChange={handleChange}
+      />
+      <ReactSelect
+        variant="creatable"
+        isClearable
+        MuiTextFieldProps={{
+          label: "Creatable Select",
+          fullWidth: true,
+          InputProps: {
+            disableUnderline: false,
+          },
+        }}
+        placeholder="Placeholder"
+        options={[
+          {
+            label: "I am label",
+            value: "value",
+          },
+        ]}
+      />
+    </>
+  );
+};
+
+export const WithMultiSelect: FC = () => {
+  const [multiValue, setMultiValue] =
+    useState<ValueType<OptionType, boolean>>();
+  const [selectedValues, setSelectedValues] = useState<string[]>();
+  const handleMultiChange = (value: ValueType<OptionType, boolean>) => {
+    setMultiValue(value);
+    if (!value) {
+      // Handle the undefined / null scenario here
+    } else if (value instanceof Array) {
+      // Handle an array here
+      // You will likely get an array if you have enabled
+      // isMulti prop
+      setSelectedValues(value.map((el) => el.value));
+    } else {
+      // Handle a single value here
+    }
+  };
+  return (
+    <>
+      Selected Value: {selectedValues?.join(",")}
+      <ReactSelect
+        MuiTextFieldProps={{
+          label: "Multi Select",
+          fullWidth: true,
+          InputProps: {
+            disableUnderline: false,
+          },
+        }}
+        value={multiValue}
+        isMulti
+        options={[
+          {
+            label: "label",
+            value: "value2",
+          },
+          {
+            label: "label2",
+            value: "value3",
+          },
+          {
+            label:
+              "loooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo text",
+            value: "value4",
+          },
+          {
+            label:
+              "loooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo text",
+            value: "value5",
+          },
+        ]}
+        onChange={handleMultiChange}
+      />
+      <ReactSelect
+        variant="creatable"
+        MuiTextFieldProps={{
+          label: "Creatable Multi Select",
+          fullWidth: true,
+          InputProps: {
+            disableUnderline: false,
+          },
+        }}
+        isMulti
+        options={[
+          {
+            label: "label",
+            value: "value2",
+          },
+          {
+            label: "label2",
+            value: "value3",
+          },
+          {
+            label:
+              "loooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo text",
+            value: "value4",
+          },
+          {
+            label:
+              "loooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo text",
+            value: "value5",
+          },
+        ]}
+      />
+    </>
+  );
+};
+
+export const WithDefaultValue: FC = () => (
+  <>
+    <ReactSelect
+      MuiTextFieldProps={{
+        label: "Single Select",
+        fullWidth: true,
+        InputProps: {
+          disableUnderline: false,
+        },
+        margin: "normal",
+      }}
+      value={{
+        label: "I am label",
+        value: "value",
+      }}
+    />
+    <ReactSelect
+      MuiTextFieldProps={{
+        label: "Multi Select",
+        fullWidth: true,
+        InputProps: {
+          disableUnderline: false,
+        },
+      }}
+      isMulti
+      value={[
+        {
+          label: "label4",
+          value: "value2",
+        },
+        {
+          label: "label5",
+          value: "value3",
+        },
+      ]}
+    />
+  </>
+);
+
+const Option = (props: any) => {
+  const { userName, userPhone, userOrganizationName } = props.data;
+  return (
+    <ListItem
+      buttonRef={props.innerRef}
+      selected={props.isFocused}
+      button
+      style={{
+        fontWeight: props.isSelected ? 500 : 400,
+      }}
+      {...props.innerProps}
+    >
+      <ListItemText
+        primary={userName}
+        secondary={
+          <>
+            <Typography component="span" color="textPrimary">
+              {userOrganizationName}
+            </Typography>{" "}
+            {userPhone}
+          </>
+        }
+      />
+    </ListItem>
+  );
+};
+
+type CusOptionType = {
+  value: string;
+  label: string;
+  userName: string;
+  userOrganizationName: string;
+  userPhone: string;
+};
+
+export const WithCustomizedOption: FC = () => {
+  const options: CusOptionType[] = [
+    {
+      userName: "userName",
+      userOrganizationName: "userOrganizationName",
+      userPhone: "userPhone",
+      value: "userName",
+      label: "userName",
+    },
+  ];
+  return (
+    <ReactSelect
+      MuiTextFieldProps={{
+        fullWidth: true,
+        InputProps: {
+          disableUnderline: false,
+        },
+      }}
+      options={options}
+      components={{
+        Option,
+      }}
+    />
+  );
+};
+
+export const WithDialog: FC = () => {
+  const [open, setOpen] = useState(false);
+  const options = [
+    {
+      label: "I am label",
+      value: "value",
+    },
+    {
+      label: "I am label",
+      value: "value1",
+    },
+    {
+      label: "I am label",
+      value: "value2",
+    },
+    {
+      label: "I am label",
+      value: "value3",
+    },
+    {
+      label: "I am label",
+      value: "value4",
+    },
+    {
+      label: "I am label",
+      value: "value5",
+    },
+    {
+      label: "I am label",
+      value: "value6",
+    },
+  ];
+  return (
+    <>
+      <Button onClick={() => setOpen(true)}>Open Dialog</Button>
+      <Dialog open={open} onClose={() => setOpen(false)} fullWidth>
+        <DialogContent>
+          <ReactSelect
+            variant="creatable"
+            isClearable
+            placeholder="Placeholder"
+            options={options}
+            MuiTextFieldProps={{
+              label: "label",
+              variant: "outlined",
+              fullWidth: true,
+            }}
+          />
+          <Box height="100px" />
+          <ReactSelect
+            variant="creatable"
+            isClearable
+            placeholder="Placeholder"
+            options={options}
+            MuiTextFieldProps={{
+              label: "label",
+              variant: "outlined",
+              fullWidth: true,
+            }}
+          />
+          <Box height="500px" />
+          <ReactSelect
+            isClearable
+            placeholder="Placeholder"
+            options={options}
+          />
+        </DialogContent>
+      </Dialog>
+    </>
+  );
+};
+
+export const WithReduxFormField: FC = () => {
+  const initialValues = {
+    field1: {
+      label: "I am label",
+      value: "value",
+    },
+    field2: {
+      label: "I am label",
+      value: "value",
+    },
+    field3: {
+      label: "I am label",
+      value: "value",
+    },
+    field4: [
+      {
+        label: "label4",
+        value: "value2",
+      },
+      {
+        label: "label5",
+        value: "value3",
+      },
+    ],
+    field5: [
+      {
+        label: "label4",
+        value: "value2",
+      },
+      {
+        label: "label5",
+        value: "value3",
+      },
+    ],
+    field6: "value2",
+    field7: ["value2", "value3"],
+  };
+  const [values, setValues] = useState(initialValues);
+  const options = [
+    {
+      label: "label",
+      value: "value2",
+    },
+    {
+      label: "label2",
+      value: "value3",
+    },
+    {
+      label: "label3",
+      value: "value4",
+    },
+    {
+      label: "label4",
+      value: "value5",
+    },
+    {
+      label: "label5",
+      value: "value6",
+    },
+  ];
+  const handleFormChange = (values: any) => {
+    setValues(values);
+  };
+  return (
+    <Provider store={store}>
+      <Grid container>
+        <Grid item xs={6}>
+          <ReduxForm onChange={handleFormChange} initialValues={initialValues}>
+            <Field
+              name="field1"
+              component={ReactSelectField}
+              options={options}
+              isClearable
+              MuiTextFieldProps={{
+                label: "Single Select",
+                fullWidth: true,
+                InputProps: {
+                  disableUnderline: false,
+                },
+                margin: "normal",
+                helperText: "customized helperText",
+              }}
+            />
+            {/* Pass meta props cause the failed prop type and don't worry it's just for demo */}
+            <Field
+              name="field2"
+              component={ReactSelectField}
+              options={options}
+              isClearable
+              MuiTextFieldProps={{
+                label: "Error Message",
+                fullWidth: true,
+                InputProps: {
+                  disableUnderline: false,
+                },
+                margin: "normal",
+              }}
+              meta={{
+                invalid: true,
+                touched: true,
+                error: "error message",
+              }}
+            />
+            <Field
+              variant="creatable"
+              name="field3"
+              component={ReactSelectField}
+              options={options}
+              isClearable
+              MuiTextFieldProps={{
+                label: "Creatable Single Select",
+                fullWidth: true,
+                InputProps: {
+                  disableUnderline: false,
+                },
+                margin: "normal",
+              }}
+            />
+            <Field
+              name="field4"
+              component={ReactSelectField}
+              options={options}
+              isClearable
+              isMulti
+              MuiTextFieldProps={{
+                label: "Multi Select",
+                fullWidth: true,
+                InputProps: {
+                  disableUnderline: false,
+                },
+              }}
+            />
+            <Field
+              variant="creatable"
+              name="field5"
+              component={ReactSelectField}
+              options={options}
+              isClearable
+              isMulti
+              MuiTextFieldProps={{
+                label: "Creatable Multi Select",
+                fullWidth: true,
+                InputProps: {
+                  disableUnderline: false,
+                },
+              }}
+            />
+            <Field
+              name="field6"
+              component={ReactSelectField}
+              options={options}
+              isClearable
+              format={(value: any) => {
+                if (typeof value === "string") {
+                  return {
+                    label: value,
+                    value,
+                  };
+                }
+                return value;
+              }}
+              normalize={(value: any) => {
+                if (value) return value.value;
+                return value;
+              }}
+              MuiTextFieldProps={{
+                label: "Normalize Single Select",
+                fullWidth: true,
+                InputProps: {
+                  disableUnderline: false,
+                },
+                margin: "normal",
+              }}
+            />
+            <Field
+              name="field7"
+              component={ReactSelectField}
+              options={options}
+              isClearable
+              isMulti
+              format={(value: any) => {
+                if (Array.isArray(value)) {
+                  return value.map((el) => ({
+                    label: el,
+                    value: el,
+                  }));
+                }
+                return value;
+              }}
+              normalize={(value: any) => {
+                if (value) return value.map((el: any) => el.value);
+                return value;
+              }}
+              MuiTextFieldProps={{
+                label: "Normalize Multi Select",
+                fullWidth: true,
+                InputProps: {
+                  disableUnderline: false,
+                },
+                margin: "normal",
+              }}
+            />
+          </ReduxForm>
+        </Grid>
+        <Grid item xs={6}>
+          <Highlight
+            code={JSON.stringify(values, null, 4)}
+            type="language-json"
+          />
+        </Grid>
+      </Grid>
+    </Provider>
+  );
+};

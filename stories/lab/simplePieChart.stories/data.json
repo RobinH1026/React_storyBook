@@ -1,0 +1,22 @@
+{
+  "reportTitle": "圓餅圖標題",
+  "reportType": "PIE",
+  "reportData": [
+    {
+      "name": "測試.jpeg",
+      "total": 10
+    },
+    {
+      "name": "測試.jpeg",
+      "total": 8
+    },
+    {
+      "name": "測試.jpeg",
+      "total": 30
+    },
+    {
+      "name": "test.jpg",
+      "total": 13
+    }
+  ]
+}

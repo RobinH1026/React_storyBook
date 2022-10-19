@@ -1,0 +1,50 @@
+{
+  "reportId": "0219182fdc314a6aab4242d04ff6bbd0",
+  "reportType": "BAR",
+  "reportIcon": "BarChart",
+  "reportMetricsValue": "FILE_DOWNLOAD_TIMES",
+  "reportTitle": "檔案下載排行榜",
+  "reportCreateDateString": "2021-11-09T11:09:32.000Z",
+  "reportData": [
+    {
+      "name": "3-7-3臺中市立仁愛之家新進院民體檢表.docx",
+      "total": 93
+    },
+    {
+      "name": "test1233.pptx",
+      "total": 29
+    },
+    {
+      "name": "-活動邀請_行前通知.drawio (7).png",
+      "total": 18
+    },
+    {
+      "name": "今天天氣真好 大學生 處在一個地方.txt",
+      "total": 8
+    },
+    {
+      "name": "火山泥洗面乳.jpg",
+      "total": 6
+    },
+    {
+      "name": "3-7-2臺中市立仁愛之家入家申請暨個案轉介單.odt",
+      "total": 4
+    },
+    {
+      "name": "test.json",
+      "total": 4
+    },
+    {
+      "name": "中文3.jpg",
+      "total": 3
+    },
+    {
+      "name": "測試.jpeg",
+      "total": 3
+    },
+    {
+      "name": "test.jpg",
+      "total": 3
+    }
+  ]
+}

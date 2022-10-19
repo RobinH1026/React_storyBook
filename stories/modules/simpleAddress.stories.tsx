@@ -1,0 +1,318 @@
+import React, { FC, ReactNode, useState } from "react";
+
+import { Meta } from "@storybook/react";
+
+import { Provider } from "react-redux";
+import Grid from "@mui/material/Grid";
+import Typography from "@mui/material/Typography";
+import { Fields, FieldArray } from "redux-form";
+import SimpleAddress from "@eGroupAI/material-module/SimpleAddress";
+import SimpleAddressFields from "@eGroupAI/material-form/SimpleAddressFields";
+import { Button } from "@mui/material";
+import Highlight from "stories/storyUtils/Highlight";
+import ReduxForm from "stories/storyUtils/ReduxForm";
+import { store } from "stories/storyUtils/configureStore";
+
+export default {
+  title: "Modules/SimpleAddress",
+  component: SimpleAddress,
+} as Meta;
+
+export const Default: FC = () => {
+  const [value, setValue] = useState({});
+  return (
+    <>
+      {JSON.stringify(value)}
+      <SimpleAddress
+        MuiTextFieldProps={{
+          helperText: "TEST",
+          label: "TEST",
+          style: {
+            minWidth: 120,
+          },
+        }}
+        cityProps={{
+          label: "戶籍縣市",
+          helperText: "縣市",
+          error: true,
+        }}
+        areaProps={{
+          label: "戶籍地區",
+          helperText: "地區",
+        }}
+        zipCodeProps={{
+          label: "郵遞區號",
+        }}
+        onChange={(value) => {
+          setValue(value);
+        }}
+        renderFields={(
+          field1: ReactNode,
+          field2: ReactNode,
+          field3: ReactNode
+        ) => (
+          <Grid container>
+            <Grid item xs={12}>
+              {field1}
+            </Grid>
+            <Grid item xs={12}>
+              {field2}
+            </Grid>
+            <Grid item xs={12}>
+              {field3}
+            </Grid>
+          </Grid>
+        )}
+      />
+    </>
+  );
+};
+
+export const WithControlledValue: FC = () => {
+  const [value, setValue] = useState({
+    city: "",
+    area: "",
+  });
+  return (
+    <>
+      {JSON.stringify(value)}
+      <br />
+      <Button
+        onClick={() => {
+          setValue({
+            city: "基隆市",
+            area: "仁愛區",
+          });
+        }}
+        variant="contained"
+        color="primary"
+        disableElevation
+      >
+        Update Value
+      </Button>
+      <SimpleAddress
+        MuiTextFieldProps={{
+          helperText: "TEST",
+          label: "TEST",
+          style: {
+            minWidth: 120,
+          },
+        }}
+        cityProps={{
+          label: "戶籍縣市",
+          helperText: "縣市",
+          error: true,
+        }}
+        areaProps={{
+          label: "戶籍地區",
+          helperText: "地區",
+        }}
+        zipCodeProps={{
+          label: "郵遞區號",
+        }}
+        value={value}
+        renderFields={(
+          field1: ReactNode,
+          field2: ReactNode,
+          field3: ReactNode
+        ) => (
+          <Grid container>
+            <Grid item xs={12}>
+              {field1}
+            </Grid>
+            <Grid item xs={12}>
+              {field2}
+            </Grid>
+            <Grid item xs={12}>
+              {field3}
+            </Grid>
+          </Grid>
+        )}
+      />
+    </>
+  );
+};
+
+const renderList = ({ fields }: any) =>
+  fields.map((field: any) => (
+    <div key={field}>
+      <Fields
+        names={[`${field}.city`, `${field}.area`, `${field}.postalCode`]}
+        component={SimpleAddressFields}
+      />
+    </div>
+  ));
+
+export const WithReduxFormField: FC = () => {
+  const [values, setValues] = React.useState({
+    city: "基隆市",
+    area: "三重",
+    postalCode: "100",
+    addressList: [
+      {
+        city: "基隆市",
+        area: "三重",
+        postalCode: "100",
+      },
+      {
+        city: "基隆市",
+        area: "三重",
+        postalCode: "100",
+      },
+      {
+        city: "基隆市",
+        area: "三重",
+        postalCode: "100",
+      },
+    ],
+  });
+  const handleChange = (values: any) => {
+    setValues(values);
+  };
+  return (
+    <Provider store={store}>
+      <Grid container>
+        <Grid item xs={6}>
+          <ReduxForm onChange={handleChange} initialValues={values}>
+            <Typography variant="h6">default</Typography>
+            <Fields
+              names={["city", "area", "postalCode"]}
+              component={SimpleAddressFields}
+            />
+            <Fields
+              names={["city", "area", "postalCode"]}
+              component={SimpleAddressFields}
+              MuiTextFieldProps={{
+                helperText: "TEST",
+                label: "TEST",
+                style: {
+                  minWidth: 120,
+                },
+              }}
+              cityProps={{
+                label: "戶籍縣市",
+                helperText: "縣市",
+              }}
+              areaProps={{
+                label: "戶籍地區",
+                helperText: "地區",
+              }}
+              postalCodeProps={{
+                label: "郵遞區號",
+              }}
+            />
+            <Fields
+              names={["city", "area", "postalCode"]}
+              MuiTextFieldProps={{
+                fullWidth: true,
+                margin: "normal",
+              }}
+              cityProps={{
+                label: "縣市",
+              }}
+              areaProps={{
+                label: "地區",
+              }}
+              postalCodeProps={{
+                label: "郵遞區號",
+              }}
+              component={SimpleAddressFields}
+              render={(field1: any, field2: any, field3: any) => (
+                <Grid container>
+                  <Grid item xs={12}>
+                    {field1}
+                  </Grid>
+                  <Grid item xs={12}>
+                    {field2}
+                  </Grid>
+                  <Grid item xs={12}>
+                    {field3}
+                  </Grid>
+                </Grid>
+              )}
+            />
+            <Typography variant="h6">without postalCode</Typography>
+            <Fields names={["city", "area"]} component={SimpleAddressFields} />
+            <Fields
+              names={["city", "area"]}
+              component={SimpleAddressFields}
+              render={(field1: any, field2: any, field3: any) => (
+                <Grid container>
+                  <Grid item xs={12}>
+                    {field1}
+                  </Grid>
+                  <Grid item xs={12}>
+                    {field2}
+                  </Grid>
+                  <Grid item xs={12}>
+                    {field3}
+                  </Grid>
+                </Grid>
+              )}
+            />
+            <Typography variant="h6">with nest Fields</Typography>
+            <FieldArray name="addressList" component={renderList} />
+            <Typography variant="h6">with Error</Typography>
+            <Fields
+              names={["city", "area", "postalCode"]}
+              MuiTextFieldProps={{
+                fullWidth: true,
+                margin: "normal",
+              }}
+              cityProps={{
+                label: "縣市",
+              }}
+              areaProps={{
+                label: "地區",
+              }}
+              postalCodeProps={{
+                label: "郵遞區號",
+              }}
+              component={SimpleAddressFields}
+              /* Pass props to test error status */
+              city={{
+                input: {
+                  value: "",
+                  onChange: () => {},
+                },
+                meta: {
+                  invalid: true,
+                  touched: true,
+                  error: "city error message",
+                },
+              }}
+              area={{
+                input: {
+                  value: "",
+                  onChange: () => {},
+                },
+                meta: {
+                  invalid: true,
+                  touched: true,
+                  error: "area error message",
+                },
+              }}
+              postalCode={{
+                input: {
+                  value: "",
+                  onChange: () => {},
+                },
+                meta: {
+                  invalid: true,
+                  touched: true,
+                  error: "postalCode error message",
+                },
+              }}
+            />
+          </ReduxForm>
+        </Grid>
+        <Grid item xs={6}>
+          <Highlight
+            code={JSON.stringify(values, null, 4)}
+            type="language-json"
+          />
+        </Grid>
+      </Grid>
+    </Provider>
+  );
+};

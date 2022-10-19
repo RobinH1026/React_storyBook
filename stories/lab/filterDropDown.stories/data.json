@@ -1,0 +1,436 @@
+[
+  {
+    "filterKey": "C19_1",
+    "filterName": "角色",
+    "filterIcon": "PermIdentity",
+    "type": "CHOICEMULTI",
+    "dataList": [
+      {
+        "name": "全開角色",
+        "value": "e5f1473236c9429fa518468e703d67f1"
+      },
+      {
+        "name": "角色1-2",
+        "value": "6f9e39999215404a91e18526601d0f50"
+      },
+      {
+        "name": "角色1-2",
+        "value": "e453a3d738b34d69aab8755951a4ceec"
+      },
+      {
+        "name": "科長",
+        "value": "0219182fdc314a6aab4242d04ff6bbda"
+      },
+      {
+        "name": "科長",
+        "value": "bc11ffe93fa24c45ad53ade7bb417659"
+      },
+      {
+        "name": "角色1-2",
+        "value": "f78b9b96ce6e48dd843be8817f4ff27b"
+      },
+      {
+        "name": "角色1-2",
+        "value": "8a5063153fee41ccad03719c5b5b6d6b"
+      },
+      {
+        "name": "科長",
+        "value": "9229e2413fa14aee86e6c703590d7d73"
+      },
+      {
+        "name": "科長",
+        "value": "506324183d7b44fb81d0d3c997dc7af9"
+      },
+      {
+        "name": "No Data",
+        "value": "EGROUP_EMPTY"
+      }
+    ]
+  },
+  {
+    "filterKey": "C18",
+    "filterName": "Select Date Range",
+    "filterIcon": "PermIdentity",
+    "type": "DATE_RANGE"
+  },
+  {
+    "filterKey": "C17",
+    "filterName": "Select Number Range",
+    "filterIcon": "PermIdentity",
+    "type": "NUMBER_RANGE",
+    "dataList": [
+      {
+        "name": "最小值",
+        "value": "0"
+      },
+      {
+        "name": "最大值",
+        "value": "200"
+      }
+    ]
+  },
+  {
+    "filterKey": "C20",
+    "filterName": "Select Number Range",
+    "filterIcon": "PermIdentity",
+    "type": "NUMBER_RANGE",
+    "dataList": [
+      {
+        "name": "最小值",
+        "value": "0"
+      },
+      {
+        "name": "最大值",
+        "value": "200"
+      }
+    ]
+  },
+  {
+    "filterKey": "C21",
+    "filterName": "角色",
+    "type": "CHOICEMULTI",
+    "dataList": [
+      {
+        "name": "全開角色",
+        "value": "e5f1473236c9429fa518468e703d67f1"
+      },
+      {
+        "name": "角色1-2",
+        "value": "6f9e39999215404a91e18526601d0f50"
+      },
+      {
+        "name": "角色1-2",
+        "value": "e453a3d738b34d69aab8755951a4ceec"
+      },
+      {
+        "name": "科長",
+        "value": "0219182fdc314a6aab4242d04ff6bbda"
+      },
+      {
+        "name": "科長",
+        "value": "bc11ffe93fa24c45ad53ade7bb417659"
+      },
+      {
+        "name": "角色1-2",
+        "value": "f78b9b96ce6e48dd843be8817f4ff27b"
+      },
+      {
+        "name": "角色1-2",
+        "value": "8a5063153fee41ccad03719c5b5b6d6b"
+      },
+      {
+        "name": "科長",
+        "value": "9229e2413fa14aee86e6c703590d7d73"
+      },
+      {
+        "name": "科長",
+        "value": "506324183d7b44fb81d0d3c997dc7af9"
+      },
+      {
+        "name": "No Data",
+        "value": "EGROUP_EMPTY"
+      }
+    ]
+  },
+  {
+    "filterKey": "C22",
+    "filterName": "角色",
+    "type": "CHOICEMULTI",
+    "dataList": [
+      {
+        "name": "全開角色",
+        "value": "e5f1473236c9429fa518468e703d67f1"
+      },
+      {
+        "name": "角色1-2",
+        "value": "6f9e39999215404a91e18526601d0f50"
+      },
+      {
+        "name": "角色1-2",
+        "value": "e453a3d738b34d69aab8755951a4ceec"
+      },
+      {
+        "name": "科長",
+        "value": "0219182fdc314a6aab4242d04ff6bbda"
+      },
+      {
+        "name": "科長",
+        "value": "bc11ffe93fa24c45ad53ade7bb417659"
+      },
+      {
+        "name": "角色1-2",
+        "value": "f78b9b96ce6e48dd843be8817f4ff27b"
+      },
+      {
+        "name": "角色1-2",
+        "value": "8a5063153fee41ccad03719c5b5b6d6b"
+      },
+      {
+        "name": "科長",
+        "value": "9229e2413fa14aee86e6c703590d7d73"
+      },
+      {
+        "name": "科長",
+        "value": "506324183d7b44fb81d0d3c997dc7af9"
+      },
+      {
+        "name": "No Data",
+        "value": "EGROUP_EMPTY"
+      }
+    ]
+  },
+  {
+    "filterKey": "C35_1",
+    "filterName": "成員",
+    "filterIcon": "Hub",
+    "type": "CHOICEMULTI_TEXT",
+    "dataList": [
+      {
+        "name": "無資料",
+        "value": "EGROUP_EMPTY"
+      },
+      {
+        "name": "GXXXXXXXn",
+        "value": "1168266161fa4ccf8c89eb36a01e64c1"
+      },
+      {
+        "name": "RXXXX2",
+        "value": "bea287d93f5f4039bdb074a4942503b4"
+      },
+      {
+        "name": "aXXXXXXt",
+        "value": "f02d330ba4ba497482acd9a2bc51b22f"
+      },
+      {
+        "name": "sXXXXXXXXXe",
+        "value": "012024e703414c95ac3f0438ace8bcc6"
+      },
+      {
+        "name": "eXXXXXXI",
+        "value": "google_115005331904901689555"
+      },
+      {
+        "name": "楊X芬",
+        "value": "891c7b49180b4903bdc499db43ed0d4f"
+      },
+      {
+        "name": "賴X元",
+        "value": "google_111357586925427857807"
+      },
+      {
+        "name": "DXXXXXXXXn",
+        "value": "google_101193140335506937144"
+      },
+      {
+        "name": "王X之",
+        "value": "16940f537304402a9c49aaeda4af92e5"
+      },
+      {
+        "name": "sXXXXXXXXu",
+        "value": "e9f6c79de4ae4de2a4a88b95d6d35a58"
+      },
+      {
+        "name": "李X仙",
+        "value": "e0e27b37f1fd477b9caaf0d0b4c4fdfa"
+      },
+      {
+        "name": "廖X萍",
+        "value": "76f6ad945edf46059aff69fa4a6cd7ff"
+      },
+      {
+        "name": "鍾X龍",
+        "value": "f01e7c3c6a304be4af746f080793d9be"
+      },
+      {
+        "name": "蔣X萱",
+        "value": "f7b4f8a5e4934a1bba3c92b4f9bfc8c9"
+      },
+      {
+        "name": "郭X儀",
+        "value": "342220659d204eda8788ccc77009162c"
+      },
+      {
+        "name": "SXXXXXXXn",
+        "value": "6f197d95596c494f9606fb56439a3ff0"
+      },
+      {
+        "name": "李X柔",
+        "value": "22ee0cbc9c8c4e878e2820ffc67f5067"
+      },
+      {
+        "name": "劉X宜",
+        "value": "0918037fbb6c46b49765a8dd11f330fd"
+      },
+      {
+        "name": "游X涵",
+        "value": "63bc6d7e26a848fe8b96aa870674808f"
+      },
+      {
+        "name": "黃X環",
+        "value": "619952500caf46f7bc9e7b824f2fa00b"
+      },
+      {
+        "name": "李X瑤",
+        "value": "c184e2d181434eb1ab11a1ae00b71b3e"
+      },
+      {
+        "name": "陳X妙",
+        "value": "9ff16878148d4f2e9d73572a4fc85303"
+      },
+      {
+        "name": "謝X君",
+        "value": "955db9098ba04c7f9f859a8c53091e3e"
+      },
+      {
+        "name": "簡X儀",
+        "value": "f6589d67aa1249efba6ce3573e6e4ab4"
+      },
+      {
+        "name": "蔡X誠",
+        "value": "b4ecc888391c42979ecd59cbc13f730f"
+      },
+      {
+        "name": "劉X希",
+        "value": "024244d2acb6495bad4749f00110324c"
+      },
+      {
+        "name": "劉X中",
+        "value": "9d4a537f683f473592de86adca53f812"
+      },
+      {
+        "name": "林X懋",
+        "value": "44ad6557dbcc46e9be221347e2007daa"
+      },
+      {
+        "name": "王X真",
+        "value": "e6272a91b9cd455a8f064d545649cf5d"
+      },
+      {
+        "name": "陳X玲",
+        "value": "2aefb47fb87041d29ab1a67a29586024"
+      },
+      {
+        "name": "郭X璇",
+        "value": "283356582e7144c19299d3ca52344dd7"
+      },
+      {
+        "name": "吳X樺",
+        "value": "30d26d51818b41b4a8f49f8ba747de25"
+      },
+      {
+        "name": "尹X群",
+        "value": "ed581f005d1f41e783499701b9368529"
+      },
+      {
+        "name": "張X菁",
+        "value": "47363aa7d7a9429e89f2b3af5c0beaf5"
+      },
+      {
+        "name": "邱X芸",
+        "value": "bfbbdee003394707a6922374bca20cc3"
+      },
+      {
+        "name": "黃X愉",
+        "value": "a48dd59610e74028af7852ff9aa5bf38"
+      },
+      {
+        "name": "林X富",
+        "value": "aecde3e041964f659d1c1f81bf7de841"
+      },
+      {
+        "name": "鄒X縈",
+        "value": "25bbfec9b72d4028a439fe530830752e"
+      },
+      {
+        "name": "王X蘋",
+        "value": "c9b5fb3515464c52b7487fd111cdb0f3"
+      },
+      {
+        "name": "蔡X吟",
+        "value": "04de13a5f6594bdd9b89e1afaf34bfa9"
+      },
+      {
+        "name": "sXXXn",
+        "value": "2dc43d6345b548ee895c2f50016be165"
+      },
+      {
+        "name": "KXXXXXXXXXg",
+        "value": "b317577a353c49c1b6d5dd12ec8e22db"
+      },
+      {
+        "name": "林X茹",
+        "value": "bcde3d2cc1874329a9d7d830939e2db3"
+      },
+      {
+        "name": "賴X雯",
+        "value": "21e50934973d414099489222eb8f98db"
+      },
+      {
+        "name": "徐X怡",
+        "value": "fd5cc19b0ee1472094d0209b85484952"
+      },
+      {
+        "name": "陳X琳",
+        "value": "8cdfa1eabdd24b5b81b3172d2202213e"
+      },
+      {
+        "name": "洪X君",
+        "value": "b89b5732095a419bb551b81270af82f4"
+      },
+      {
+        "name": "CXXXXXXXu",
+        "value": "9664280e48bd44d49421e357777c9eaa"
+      },
+      {
+        "name": "林X芬",
+        "value": "0a1f11c40332404da5a84050a59913a2"
+      },
+      {
+        "name": "邱X嘉",
+        "value": "c2bb52ad63a2444784dbbf38bff76c21"
+      },
+      {
+        "name": "YXXXXXXXXXXg",
+        "value": "95b01d668e8949a2acc15ee67b968d00"
+      },
+      {
+        "name": "陳X鈴",
+        "value": "bc417d3c302949e8be7d3936d56d7733"
+      },
+      {
+        "name": "張X穎",
+        "value": "83a2386f96ca4ba98ff30e0d7f18e6e3"
+      },
+      {
+        "name": "葉X博",
+        "value": "ed646ea7d54b4383848bfa9f1ce274ca"
+      },
+      {
+        "name": "吳X虹",
+        "value": "fc89b96f5ba5439d9b42618d9ec18c22"
+      }
+    ],
+    "targetType": "HRM_MEMBERS"
+  },
+  {
+    "filterKey": "C35_1",
+    "filterName": "客戶-個人",
+    "filterIcon": "Hub",
+    "type": "CHOICEMULTI_TEXT",
+    "dataList": [
+      {
+        "name": "無資料",
+        "value": "EGROUP_EMPTY"
+      },
+      {
+        "name": "陳X柚",
+        "value": "75b97e69dce0405cbb7910fcc1f36477"
+      },
+      {
+        "name": "杜X欣",
+        "value": "06ba5959b68a4034b68650c0d79f38c1"
+      }
+    ],
+    "targetType": "CRM_USER"
+  }
+]

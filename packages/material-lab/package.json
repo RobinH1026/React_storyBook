@@ -1,0 +1,102 @@
+{
+  "name": "@eGroupAI/material-lab",
+  "version": "8.36.6",
+  "private": false,
+  "author": "eGroup Team",
+  "description": "EGroup Team Lab - Incubator for EGroup Team experimental React components.",
+  "keywords": [
+    "eGroup",
+    "react",
+    "react-component",
+    "lab"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:eGroupAI/egroup-material.git",
+    "directory": "packages/material-lab"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/eGroupAI/egroup-material/issues"
+  },
+  "homepage": "https://egroup-material.s3.ap-northeast-1.amazonaws.com/storybook-static/index.html",
+  "dependencies": {
+    "clsx": "^1.1.1",
+    "date-fns": "^2.22.1",
+    "warning": "^4.0.3"
+  },
+  "scripts": {
+    "test": "jest",
+    "clean": "rimraf build",
+    "build": "yarn clean && yarn build:cjs && yarn build:esm",
+    "build:cjs": "babel --config-file ../../babel.cjs.config.js ./src --out-dir ./build --extensions .js,.ts,.jsx,.tsx",
+    "build:esm": "babel --config-file ../../babel.config.js ./src --out-dir ./build/esm --extensions .js,.ts,.jsx,.tsx",
+    "build:copy-files": "node ../../scripts/copy-files.js",
+    "clear:tsd": "node ../../scripts/clear-tsd.js"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "peerDependencies": {
+    "@eGroupAI/hooks": "^8.32.7",
+    "@eGroupAI/material": "^8.32.7",
+    "@eGroupAI/typings": "^8.32.7",
+    "@eGroupAI/utils": "^8.27.11",
+    "@mui/icons-material": "^5.2.1",
+    "@mui/lab": "^5.0.0-alpha.59",
+    "@mui/material": "^5.2.3",
+    "@mui/styles": "^5.2.3",
+    "@types/marked": "^2.0.2",
+    "@types/react": "^16.8.6 || ^17.0.0",
+    "@types/react-dom": "^16.9.8 || ^17.0.0",
+    "highlight.js": "^10.1.2",
+    "immutable": "^4.0.0",
+    "marked": "^2.1.1",
+    "qr.js": "^0.0.0",
+    "react": "^16.8.0 || ^17.0.0",
+    "react-dom": "^16.8.0 || ^17.0.0",
+    "react-dropzone": "^11.2.3",
+    "react-redux": "^7.2.1",
+    "recharts": "^2.1.6",
+    "redux-form": "^8.3.6",
+    "swiper": "^7.3.3"
+  },
+  "peerDependenciesMeta": {
+    "@material-ui/lab": {
+      "optional": true
+    },
+    "highlight.js": {
+      "optional": true
+    },
+    "immutable": {
+      "optional": true
+    },
+    "@types/marked": {
+      "optional": true
+    },
+    "marked": {
+      "optional": true
+    },
+    "qr.js": {
+      "optional": true
+    },
+    "react-dropzone": {
+      "optional": true
+    },
+    "react-redux": {
+      "optional": true
+    },
+    "redux-form": {
+      "optional": true
+    },
+    "recharts": {
+      "optional": true
+    },
+    "swiper": {
+      "optional": true
+    }
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}

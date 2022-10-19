@@ -1,0 +1,30 @@
+{
+  "reportId": "0219182fdc314a6aab4242d04ff6bbd0",
+  "reportType": "SIMPLE_LINE",
+  "reportIcon": "BarChart",
+  "reportMetricsValue": "FILE_DOWNLOAD_TIMES",
+  "reportTitle": "檔案下載排行榜",
+  "reportCreateDateString": "2021-11-09T11:09:32.000Z",
+  "reportData": [
+    {
+      "name": "eGroupAI【Partner】│ 昱辰資訊 - AI熱成像人臉辨識",
+      "total": 93
+    },
+    {
+      "name": "eGroupAI【Tutorial】│ Face Recognition SDK - Quick Start by C#",
+      "total": 29
+    },
+    {
+      "name": "人臉辨識+體溫感測+口罩偵測  by 【Partner 昱辰資訊 】",
+      "total": 29
+    },
+    {
+      "name": "商務共享空間，人臉辨識應用 by 【Partner 昱辰資訊 】",
+      "total": 18
+    },
+    {
+      "name": "智慧工地，人臉辨識門禁 (第一集)  by 【Partner 昱辰資訊 】",
+      "total": 8
+    }
+  ]
+}

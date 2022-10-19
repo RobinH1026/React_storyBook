@@ -1,0 +1,18 @@
+.fr-toolbar {
+  border: none;
+}
+
+.fr-box.fr-basic .fr-wrapper {
+  border: none;
+}
+
+.fr-second-toolbar {
+  border: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .fr-view table {
+    width: 100% !important;
+    margin: 0 !important;
+  }
+}

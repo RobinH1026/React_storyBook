@@ -1,0 +1,20 @@
+import React, { FC } from "react";
+
+import { Meta } from "@storybook/react";
+
+import useIsSupportMediaDevices from "@eGroupAI/hooks/useIsSupportMediaDevices";
+
+export default {
+  title: "Hooks/useIsSupportMediaDevices",
+} as Meta;
+
+export const Default: FC = () => {
+  const [isSupportMediaDevices, info] = useIsSupportMediaDevices();
+  return (
+    <>
+      isSupportMediaDevices: {String(isSupportMediaDevices)}
+      <br />
+      info: {JSON.stringify(info)}
+    </>
+  );
+};

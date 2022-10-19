@@ -1,0 +1,174 @@
+import React, { FC, useState } from "react";
+
+import ReactSelectField from "@eGroupAI/material-formik/ReactSelectField";
+import { Grid, Button } from "@mui/material";
+import { Formik, Form, Field } from "formik";
+import ReactSelect from "@eGroupAI/material-module/ReactSelect";
+import { Meta } from "@storybook/react";
+import Highlight from "stories/storyUtils/Highlight";
+
+export default {
+  title: "Deprecated/ReactSelectFormik",
+  component: ReactSelect,
+} as Meta;
+
+const validate = (values: any) => {
+  const errors: any = {};
+
+  if (!values.field1) {
+    errors.field1 = "Required";
+  }
+
+  if (!values.field2) {
+    errors.field2 = "Required";
+  }
+
+  return errors;
+};
+
+export const WithFormikField: FC = () => {
+  const initialValues = {
+    field3: {
+      label: "I am label",
+      value: "value",
+    },
+    field4: [
+      {
+        label: "label4",
+        value: "value2",
+      },
+      {
+        label: "label5",
+        value: "value3",
+      },
+    ],
+    field5: [
+      {
+        label: "label4",
+        value: "value2",
+      },
+      {
+        label: "label5",
+        value: "value3",
+      },
+    ],
+  };
+  const [values, setValues] = useState(initialValues);
+  const options = [
+    {
+      label: "label",
+      value: "value2",
+    },
+    {
+      label: "label2",
+      value: "value3",
+    },
+    {
+      label: "label3",
+      value: "value4",
+    },
+    {
+      label: "label4",
+      value: "value5",
+    },
+    {
+      label: "label5",
+      value: "value6",
+    },
+  ];
+  const handleChange = (values: any) => {
+    setValues(values);
+  };
+  return (
+    <Grid container>
+      <Grid item xs={6}>
+        <Formik
+          onSubmit={handleChange}
+          initialValues={initialValues}
+          validate={validate}
+        >
+          <Form>
+            <Field
+              name="field1"
+              component={ReactSelectField}
+              options={options}
+              isClearable
+              MuiTextFieldProps={{
+                label: "Single Select",
+                fullWidth: true,
+                InputProps: {
+                  disableUnderline: false,
+                },
+                helperText: "customized helperText",
+              }}
+            />
+            <Field
+              name="field2"
+              component={ReactSelectField}
+              options={options}
+              isClearable
+              MuiTextFieldProps={{
+                label: "Error Message",
+                fullWidth: true,
+                InputProps: {
+                  disableUnderline: false,
+                },
+              }}
+            />
+            <Field
+              variant="creatable"
+              name="field3"
+              component={ReactSelectField}
+              options={options}
+              isClearable
+              MuiTextFieldProps={{
+                label: "Creatable Single Select",
+                fullWidth: true,
+                InputProps: {
+                  disableUnderline: false,
+                },
+              }}
+            />
+            <Field
+              name="field4"
+              component={ReactSelectField}
+              options={options}
+              isClearable
+              isMulti
+              MuiTextFieldProps={{
+                label: "Multi Select",
+                fullWidth: true,
+                InputProps: {
+                  disableUnderline: false,
+                },
+              }}
+            />
+            <Field
+              variant="creatable"
+              name="field5"
+              component={ReactSelectField}
+              options={options}
+              isClearable
+              isMulti
+              MuiTextFieldProps={{
+                label: "Creatable Multi Select",
+                fullWidth: true,
+                InputProps: {
+                  disableUnderline: false,
+                },
+              }}
+            />
+            <Button type="submit">Submit</Button>
+            <Button type="reset">Reset</Button>
+          </Form>
+        </Formik>
+      </Grid>
+      <Grid item xs={6}>
+        <Highlight
+          code={JSON.stringify(values, null, 4)}
+          type="language-json"
+        />
+      </Grid>
+    </Grid>
+  );
+};

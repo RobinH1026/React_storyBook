@@ -1,0 +1,44 @@
+[
+  {
+    "id": "1",
+    "title": "CoreStation",
+    "detail": "Lorem Ipsum is simply dummy text of the printing and industry.",
+    "imgSrc": "https://placeimg.com/215/215/any"
+  },
+  {
+    "id": "2",
+    "title": "BioEntry R2",
+    "detail": "Lorem Ipsum is simply dummy text of the printing and industry.",
+    "imgSrc": "https://placeimg.com/215/215/any"
+  },
+  {
+    "id": "3",
+    "title": "XPass D2",
+    "detail": "Lorem Ipsum is simply dummy text of the printing and industry.",
+    "imgSrc": "https://placeimg.com/215/215/any"
+  },
+  {
+    "id": "4",
+    "title": "DM-20",
+    "detail": "Lorem Ipsum is simply dummy text of the printing and industry.",
+    "imgSrc": "https://placeimg.com/215/215/any"
+  },
+  {
+    "id": "5",
+    "title": "DM-20",
+    "detail": "Lorem Ipsum is simply dummy text of the printing and industry.",
+    "imgSrc": "https://placeimg.com/215/215/any"
+  },
+  {
+    "id": "6",
+    "title": "DM-20",
+    "detail": "Lorem Ipsum is simply dummy text of the printing and industry.",
+    "imgSrc": "https://placeimg.com/215/215/any"
+  },
+  {
+    "id": "7",
+    "title": "DM-20",
+    "detail": "Lorem Ipsum is simply dummy text of the printing and industry.",
+    "imgSrc": "https://placeimg.com/215/215/any"
+  }
+]

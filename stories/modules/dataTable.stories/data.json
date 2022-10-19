@@ -1,0 +1,534 @@
+[
+  {
+    "filterConditionGroupName": "一般資料",
+    "filterConditionList": [
+      {
+        "filterKey": "C34_1",
+        "filterName": "性別",
+        "filterIcon": "Wc",
+        "type": "CHOICEMULTI",
+        "dataList": [
+          { "name": "男", "value": "1" },
+          { "name": "女", "value": "2" },
+          { "name": "無資料", "value": "EGROUP_EMPTY" }
+        ]
+      },
+      {
+        "filterKey": "C34_2",
+        "filterName": "建立時間",
+        "filterIcon": "LocalOffer",
+        "type": "DATE_RANGE"
+      },
+      {
+        "filterKey": "C34_3",
+        "filterName": "更新時間",
+        "filterIcon": "LocalOffer",
+        "type": "DATE_RANGE"
+      },
+      {
+        "filterKey": "C35_1",
+        "filterName": "成員",
+        "filterIcon": "Hub",
+        "type": "CHOICEMULTI_TEXT",
+        "dataList": [
+          {
+            "name": "無資料",
+            "value": "EGROUP_EMPTY"
+          },
+          {
+            "name": "GXXXXXXXn",
+            "value": "1168266161fa4ccf8c89eb36a01e64c1"
+          },
+          {
+            "name": "RXXXX2",
+            "value": "bea287d93f5f4039bdb074a4942503b4"
+          },
+          {
+            "name": "aXXXXXXt",
+            "value": "f02d330ba4ba497482acd9a2bc51b22f"
+          },
+          {
+            "name": "sXXXXXXXXXe",
+            "value": "012024e703414c95ac3f0438ace8bcc6"
+          },
+          {
+            "name": "eXXXXXXI",
+            "value": "google_115005331904901689555"
+          },
+          {
+            "name": "楊X芬",
+            "value": "891c7b49180b4903bdc499db43ed0d4f"
+          },
+          {
+            "name": "賴X元",
+            "value": "google_111357586925427857807"
+          },
+          {
+            "name": "DXXXXXXXXn",
+            "value": "google_101193140335506937144"
+          },
+          {
+            "name": "王X之",
+            "value": "16940f537304402a9c49aaeda4af92e5"
+          },
+          {
+            "name": "sXXXXXXXXu",
+            "value": "e9f6c79de4ae4de2a4a88b95d6d35a58"
+          },
+          {
+            "name": "李X仙",
+            "value": "e0e27b37f1fd477b9caaf0d0b4c4fdfa"
+          },
+          {
+            "name": "廖X萍",
+            "value": "76f6ad945edf46059aff69fa4a6cd7ff"
+          },
+          {
+            "name": "鍾X龍",
+            "value": "f01e7c3c6a304be4af746f080793d9be"
+          },
+          {
+            "name": "蔣X萱",
+            "value": "f7b4f8a5e4934a1bba3c92b4f9bfc8c9"
+          },
+          {
+            "name": "郭X儀",
+            "value": "342220659d204eda8788ccc77009162c"
+          },
+          {
+            "name": "SXXXXXXXn",
+            "value": "6f197d95596c494f9606fb56439a3ff0"
+          },
+          {
+            "name": "李X柔",
+            "value": "22ee0cbc9c8c4e878e2820ffc67f5067"
+          },
+          {
+            "name": "劉X宜",
+            "value": "0918037fbb6c46b49765a8dd11f330fd"
+          },
+          {
+            "name": "游X涵",
+            "value": "63bc6d7e26a848fe8b96aa870674808f"
+          },
+          {
+            "name": "黃X環",
+            "value": "619952500caf46f7bc9e7b824f2fa00b"
+          },
+          {
+            "name": "李X瑤",
+            "value": "c184e2d181434eb1ab11a1ae00b71b3e"
+          },
+          {
+            "name": "陳X妙",
+            "value": "9ff16878148d4f2e9d73572a4fc85303"
+          },
+          {
+            "name": "謝X君",
+            "value": "955db9098ba04c7f9f859a8c53091e3e"
+          },
+          {
+            "name": "簡X儀",
+            "value": "f6589d67aa1249efba6ce3573e6e4ab4"
+          },
+          {
+            "name": "蔡X誠",
+            "value": "b4ecc888391c42979ecd59cbc13f730f"
+          },
+          {
+            "name": "劉X希",
+            "value": "024244d2acb6495bad4749f00110324c"
+          },
+          {
+            "name": "劉X中",
+            "value": "9d4a537f683f473592de86adca53f812"
+          },
+          {
+            "name": "林X懋",
+            "value": "44ad6557dbcc46e9be221347e2007daa"
+          },
+          {
+            "name": "王X真",
+            "value": "e6272a91b9cd455a8f064d545649cf5d"
+          },
+          {
+            "name": "陳X玲",
+            "value": "2aefb47fb87041d29ab1a67a29586024"
+          },
+          {
+            "name": "郭X璇",
+            "value": "283356582e7144c19299d3ca52344dd7"
+          },
+          {
+            "name": "吳X樺",
+            "value": "30d26d51818b41b4a8f49f8ba747de25"
+          },
+          {
+            "name": "尹X群",
+            "value": "ed581f005d1f41e783499701b9368529"
+          },
+          {
+            "name": "張X菁",
+            "value": "47363aa7d7a9429e89f2b3af5c0beaf5"
+          },
+          {
+            "name": "邱X芸",
+            "value": "bfbbdee003394707a6922374bca20cc3"
+          },
+          {
+            "name": "黃X愉",
+            "value": "a48dd59610e74028af7852ff9aa5bf38"
+          },
+          {
+            "name": "林X富",
+            "value": "aecde3e041964f659d1c1f81bf7de841"
+          },
+          {
+            "name": "鄒X縈",
+            "value": "25bbfec9b72d4028a439fe530830752e"
+          },
+          {
+            "name": "王X蘋",
+            "value": "c9b5fb3515464c52b7487fd111cdb0f3"
+          },
+          {
+            "name": "蔡X吟",
+            "value": "04de13a5f6594bdd9b89e1afaf34bfa9"
+          },
+          {
+            "name": "sXXXn",
+            "value": "2dc43d6345b548ee895c2f50016be165"
+          },
+          {
+            "name": "KXXXXXXXXXg",
+            "value": "b317577a353c49c1b6d5dd12ec8e22db"
+          },
+          {
+            "name": "林X茹",
+            "value": "bcde3d2cc1874329a9d7d830939e2db3"
+          },
+          {
+            "name": "賴X雯",
+            "value": "21e50934973d414099489222eb8f98db"
+          },
+          {
+            "name": "徐X怡",
+            "value": "fd5cc19b0ee1472094d0209b85484952"
+          },
+          {
+            "name": "陳X琳",
+            "value": "8cdfa1eabdd24b5b81b3172d2202213e"
+          },
+          {
+            "name": "洪X君",
+            "value": "b89b5732095a419bb551b81270af82f4"
+          },
+          {
+            "name": "CXXXXXXXu",
+            "value": "9664280e48bd44d49421e357777c9eaa"
+          },
+          {
+            "name": "林X芬",
+            "value": "0a1f11c40332404da5a84050a59913a2"
+          },
+          {
+            "name": "邱X嘉",
+            "value": "c2bb52ad63a2444784dbbf38bff76c21"
+          },
+          {
+            "name": "YXXXXXXXXXXg",
+            "value": "95b01d668e8949a2acc15ee67b968d00"
+          },
+          {
+            "name": "陳X鈴",
+            "value": "bc417d3c302949e8be7d3936d56d7733"
+          },
+          {
+            "name": "張X穎",
+            "value": "83a2386f96ca4ba98ff30e0d7f18e6e3"
+          },
+          {
+            "name": "葉X博",
+            "value": "ed646ea7d54b4383848bfa9f1ce274ca"
+          },
+          {
+            "name": "吳X虹",
+            "value": "fc89b96f5ba5439d9b42618d9ec18c22"
+          }
+        ],
+        "targetType": "HRM_MEMBERS"
+      }
+    ]
+  },
+  {
+    "filterConditionGroupName": "動態欄位",
+    "filterConditionList": [
+      {
+        "filterKey": "C33_1",
+        "filterName": "日期時間",
+        "filterIcon": "CorporateFare",
+        "type": "DATETIME_RANGE",
+        "columnId": "c116c700975c4d6f989db0ad309975f0"
+      },
+      {
+        "filterKey": "C33_1",
+        "filterName": "得知信扶專案的訊息來源",
+        "filterIcon": "CorporateFare",
+        "type": "CHOICEMULTI",
+        "dataList": [
+          { "name": "公家機構介紹", "value": "公家機構介紹" },
+          { "name": "社福單位介紹", "value": "社福單位介紹" },
+          { "name": "網路搜尋", "value": "網路搜尋" },
+          { "name": "親友介紹", "value": "親友介紹" },
+          { "name": "無資料", "value": "EGROUP_EMPTY" }
+        ],
+        "columnId": "fb998f4ee1964d248f447924dca4614a"
+      },
+      {
+        "filterKey": "C33_1",
+        "filterName": "信扶系統報名年度",
+        "filterIcon": "CorporateFare",
+        "type": "CHOICEMULTI",
+        "dataList": [
+          { "name": "100", "value": "100" },
+          { "name": "110", "value": "110" },
+          { "name": "無資料", "value": "EGROUP_EMPTY" }
+        ],
+        "columnId": "ef7cd78189944352a8cb56299f7c3587"
+      },
+      {
+        "filterKey": "C33_1",
+        "filterName": "信扶個案狀態",
+        "filterIcon": "CorporateFare",
+        "type": "CHOICEMULTI",
+        "dataList": [
+          { "name": "已進案", "value": "已進案" },
+          { "name": "未進案", "value": "未進案" },
+          { "name": "無資料", "value": "EGROUP_EMPTY" }
+        ],
+        "columnId": "cb77fd1d533845b8a3721d55d9e0bff9"
+      },
+      {
+        "filterKey": "C33_1",
+        "filterName": "最高學歷",
+        "filterIcon": "CorporateFare",
+        "type": "CHOICEMULTI",
+        "dataList": [
+          { "name": "國中", "value": "國中" },
+          { "name": "國小", "value": "國小" },
+          { "name": "大學/專", "value": "大學/專" },
+          { "name": "高中/職", "value": "高中/職" },
+          { "name": "無資料", "value": "EGROUP_EMPTY" }
+        ],
+        "columnId": "2de7825c9dc8472ba874a3925db58f42"
+      },
+      {
+        "filterKey": "C33_1",
+        "filterName": "婚姻狀況",
+        "filterIcon": "CorporateFare",
+        "type": "CHOICEMULTI",
+        "dataList": [
+          { "name": "同居", "value": "同居" },
+          { "name": "喪偶", "value": "喪偶" },
+          { "name": "已婚", "value": "已婚" },
+          { "name": "未婚", "value": "未婚" },
+          { "name": "離婚", "value": "離婚" },
+          { "name": "無資料", "value": "EGROUP_EMPTY" }
+        ],
+        "columnId": "c3f4a04e183d44778e6256aae8c5e1a0"
+      },
+      {
+        "filterKey": "C33_1",
+        "filterName": "福利身份",
+        "filterIcon": "CorporateFare",
+        "type": "CHOICEMULTI",
+        "dataList": [
+          { "name": "低收入戶", "value": "低收入戶" },
+          { "name": "其他", "value": "其他" },
+          { "name": "無資料", "value": "EGROUP_EMPTY" }
+        ],
+        "columnId": "0d6b7fc6cc0a4f71894fd10d2cd22d02"
+      },
+      {
+        "filterKey": "C33_1",
+        "filterName": "目前創業狀態",
+        "filterIcon": "CorporateFare",
+        "type": "CHOICEMULTI",
+        "dataList": [
+          { "name": "已創業", "value": "已創業" },
+          { "name": "未創業", "value": "未創業" },
+          { "name": "無資料", "value": "EGROUP_EMPTY" }
+        ],
+        "columnId": "75bcfa5fb54e42d09fdf5a66069c2fe5"
+      },
+      {
+        "filterKey": "C33_1",
+        "filterName": "想/已創業的行業",
+        "filterIcon": "CorporateFare",
+        "type": "CHOICEMULTI",
+        "dataList": [
+          { "name": "批發零售業", "value": "批發零售業" },
+          { "name": "文創業", "value": "文創業" },
+          { "name": "餐飲業", "value": "餐飲業" },
+          { "name": "無資料", "value": "EGROUP_EMPTY" }
+        ],
+        "columnId": "a0897c2e350e43b1ba829ba6e2c6cf69"
+      },
+      {
+        "filterKey": "C33_1",
+        "filterName": "就業狀況",
+        "filterIcon": "CorporateFare",
+        "type": "CHOICEMULTI",
+        "dataList": [
+          { "name": "兼職", "value": "兼職" },
+          { "name": "在職中", "value": "在職中" },
+          { "name": "待業", "value": "待業" },
+          { "name": "無資料", "value": "EGROUP_EMPTY" }
+        ],
+        "columnId": "dc0068b9e9d14dfd8c426def97da68ae"
+      },
+      {
+        "filterKey": "C33_1",
+        "filterName": "族群",
+        "filterIcon": "CorporateFare",
+        "type": "CHOICEMULTI",
+        "dataList": [
+          { "name": "中華民國", "value": "中華民國" },
+          { "name": "原住民", "value": "原住民" },
+          { "name": "新住民", "value": "新住民" },
+          { "name": "無資料", "value": "EGROUP_EMPTY" }
+        ],
+        "columnId": "2ae835b1464c453aa69cc755cf49b59a"
+      },
+      {
+        "filterKey": "C33_1",
+        "filterName": "原住民族別",
+        "filterIcon": "CorporateFare",
+        "type": "CHOICEMULTI",
+        "dataList": [{ "name": "無資料", "value": "EGROUP_EMPTY" }],
+        "columnId": "000fbb1456c04ccaae90529eab93db5b"
+      },
+      {
+        "filterKey": "C33_1",
+        "filterName": "新住民原國籍",
+        "filterIcon": "CorporateFare",
+        "type": "CHOICEMULTI",
+        "dataList": [
+          { "name": "越南", "value": "越南" },
+          { "name": "無資料", "value": "EGROUP_EMPTY" }
+        ],
+        "columnId": "66d44422b2a74de680fc21a928655f1f"
+      },
+      {
+        "filterKey": "C33_1",
+        "filterName": "本人有無身心障礙",
+        "filterIcon": "CorporateFare",
+        "type": "CHOICEMULTI",
+        "dataList": [
+          { "name": "無", "value": "無" },
+          { "name": "無資料", "value": "EGROUP_EMPTY" }
+        ],
+        "columnId": "1385322044be4de88d555aebe39ec0cd"
+      }
+    ]
+  },
+  {
+    "filterConditionGroupName": "關係",
+    "filterConditionList": [
+      {
+        "filterKey": "C35_1",
+        "filterName": "信扶專案委託輔導單位同意書 0221.pdf",
+        "filterIcon": "Hub",
+        "type": "CHOICEMULTI",
+        "dataList": [
+          { "name": "有", "value": "0f3cd6f7daae4cfc9807c444d28877d6" },
+          { "name": "無資料", "value": "EGROUP_EMPTY" }
+        ],
+        "targetType": "USER_AGREEMENT",
+        "noTargetRelationValue": ["0f3cd6f7daae4cfc9807c444d28877d6"]
+      },
+      {
+        "filterKey": "C35_1",
+        "filterName": "信扶專案脫貧輔導服務推薦函 (F).pdf",
+        "filterIcon": "Hub",
+        "type": "CHOICEMULTI",
+        "dataList": [
+          { "name": "有", "value": "a6bfe7a92beb412bbb261c0b1bd663ff" },
+          { "name": "無資料", "value": "EGROUP_EMPTY" }
+        ],
+        "targetType": "USER_AGREEMENT",
+        "noTargetRelationValue": ["a6bfe7a92beb412bbb261c0b1bd663ff"]
+      }
+    ]
+  },
+  {
+    "filterConditionGroupName": "標籤",
+    "filterConditionList": [
+      {
+        "filterKey": "C24_1",
+        "filterName": "客戶來源",
+        "filterIcon": "LocalOffer",
+        "type": "CHOICEMULTI",
+        "dataList": [
+          { "name": "信扶1.0", "value": "b79f7cd12a2c420fb0885372123a7423" },
+          { "name": "信扶2.0", "value": "060b22d45e314d22a01175abbdbcf749" },
+          { "name": "財商課程", "value": "0ae79d8755ac41cdb8287d3bd6706d24" },
+          { "name": "TEST", "value": "646fefd4f1484bcb9160e803dc6ff6ed" },
+          { "name": "無資料", "value": "EGROUP_EMPTY" }
+        ],
+        "singleLayerTagServiceModuleValue": "CRM_USER",
+        "multiLayerTagServiceModuleValue": "CRM_USER"
+      },
+      {
+        "filterKey": "C24_1",
+        "filterName": "事件來源",
+        "filterIcon": "LocalOffer",
+        "type": "CHOICEMULTI",
+        "dataList": [
+          { "name": "網路", "value": "c35ee50e0f3340d58430ab6155760735" },
+          { "name": "電話", "value": "552213eacc564221b742f00495fa6c9a" },
+          { "name": "廣告", "value": "5317739e7f9046a4be76f14728f6e25f" },
+          { "name": "無資料", "value": "EGROUP_EMPTY" }
+        ],
+        "singleLayerTagServiceModuleValue": "CRM_USER",
+        "multiLayerTagServiceModuleValue": "EVENT"
+      },
+      {
+        "filterKey": "C24_1",
+        "filterName": "支出類型",
+        "filterIcon": "LocalOffer",
+        "type": "CHOICEMULTI",
+        "dataList": [
+          { "name": "食", "value": "69488f0be22c462a8ada7634d0331103" },
+          { "name": "衣", "value": "482e2167201a4d75a1d6704e0372f05f" },
+          { "name": "無資料", "value": "EGROUP_EMPTY" }
+        ],
+        "singleLayerTagServiceModuleValue": "CRM_USER",
+        "multiLayerTagServiceModuleValue": "EVENT"
+      },
+      {
+        "filterKey": "C24_1",
+        "filterName": "收入類型",
+        "filterIcon": "LocalOffer",
+        "type": "CHOICEMULTI",
+        "dataList": [
+          { "name": "薪資", "value": "6ab27183e855486e95879fed0a436a3e" },
+          { "name": "補助", "value": "4d3a950825d247918e44034731cffd98" },
+          { "name": "投資", "value": "2dae27aa629e4d339904faa7cdc8c73c" },
+          { "name": "無資料", "value": "EGROUP_EMPTY" }
+        ],
+        "singleLayerTagServiceModuleValue": "CRM_USER",
+        "multiLayerTagServiceModuleValue": "EVENT"
+      },
+      {
+        "filterKey": "C24_1",
+        "filterName": "zzzz",
+        "filterIcon": "LocalOffer",
+        "type": "CHOICEMULTI",
+        "dataList": [{ "name": "無資料", "value": "EGROUP_EMPTY" }],
+        "singleLayerTagServiceModuleValue": "CRM_USER",
+        "multiLayerTagServiceModuleValue": "EVENT"
+      }
+    ]
+  }
+]
